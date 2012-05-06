@@ -1,0 +1,27 @@
+input_file = "./TxtFiles/Txt2.txt"
+
+def print_all(f)
+  puts f.read()
+end
+
+def rewind(f)
+  f.seek(0, IO::SEEK_SET)
+end
+
+def print_a_line(line_count, f)
+  puts "#{line_count} #{f.readline()} "
+end
+
+current_file= File.open(input_file)
+
+puts "First lets print the whole file"
+puts # a blank line
+
+print_all(current_file)
+
+puts " Now lets rewind, "
+rewind(current_file)
+puts "lets print three lines:"
+0.upto(6)do |i|
+print_a_line(i, current_file)
+ end
