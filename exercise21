@@ -1,0 +1,28 @@
+def add(a,b)
+  puts "Adding #{a} + #{b}"
+  age = a + b
+  age1 = a - b
+  return age, age1
+end
+
+def subtract(a, b)
+  puts "SUBTRACTING #{a} - #{b}"
+  a - b
+end
+
+def multiply(a,b)
+  puts "Multiplying #{a} * #{b}"
+end
+
+def divide(a,b)
+  puts "DIVIDING #{a} / #{b}"
+  a / b
+end
+
+puts "Lets do some maths"
+
+age, age1= add(30,50)
+height = subtract(78,4)
+weight = multiply(90,2)
+iq = divide(100,2)
+puts "Age %d, height $d, weight %d iq %d", age, height, weight, iq
