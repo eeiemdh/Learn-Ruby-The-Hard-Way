@@ -1,4 +1,8 @@
-from_file, to_file = ARGV
+ puts " Enter file name"
+from_file = STDIN.gets.chomp()
+ puts "Enter second file name"
+to_file = STDIN.gets.chomp()
+
 script = $0
 #
 
