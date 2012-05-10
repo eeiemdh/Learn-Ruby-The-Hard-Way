@@ -1,3 +1,11 @@
+#my_file = File.open("./Ex25")
+#puts my_file.read()
+#my_file.close()
+#Dir["c:/RubyWork/GitRepository/Learn-Ruby-The-Hard-Way/*.rb"].each {|file| require file }
+
+
+#require  "./Ex25.lib"
+require './Ex25'
 puts "Lets practice everthing"
 
 puts "You'd need to know 'bout escape sequences with \\ that do
